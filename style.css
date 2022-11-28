@@ -1,0 +1,25 @@
+body {
+    background-color: lightskyblue;
+    color: black;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+}
+
+div.pixel-container {
+    flex-direction: column;
+}
+
+.pixel {
+    border: 1px solid black;
+    min-width: 25px;
+    min-height: 25px;
+    background-color: aliceblue;
+}
+
+.pixel:hover {
+    background-color: black;
+}
