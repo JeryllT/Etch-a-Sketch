@@ -9,20 +9,27 @@
 </head>
 <body>
     <div>
-        <h1>Etch-a-Sketch</h1>
+        <h1><u>Etch-a-Sketch</u></h1>
     </div>
     <div>
         <div class = "options">
-            <button onclick="containerDim(); clearCanvas()"> Click to change height and width! </button>
+            <button onclick="containerDim(); clearCanvas()"> New height and width! </button>
             <button onclick="blackWhite(); clearCanvas()"> Black and White Mode! </button>
             <button onclick="randomRBG(); clearCanvas()"> RBG Party Mode! </button>
             <button onclick="clearCanvas()"> Clear Canvas </button>
         </div>
         <div class="pixel-container">    
         </div>    
-    <div>
-
     </div>
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          JTKL
+        </p>
+      </footer>
     <script src="app.js"></script>
 </body>
 </html>

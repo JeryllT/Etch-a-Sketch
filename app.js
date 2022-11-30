@@ -29,16 +29,20 @@ function start() {
 };
 
 function containerDim() {
-    let newHeight = +prompt("What's the new height?", "100");
-    while (isNaN(newHeight) || newHeight > 100 || newHeight < 1) {
+    let newHeight = prompt("What's the new height?", "100");
+    if (newHeight === null) return;
+    while (isNaN(+newHeight) || +newHeight > 100 || +newHeight < 1) {
         alert("Please ensure value is below 100 and is a valid number.");
-        newHeight = +prompt("What's the new height?", "100");
+        newHeight = prompt("What's the new height?", "100");
+        if (newHeight === null) return;
     };
 
-    let newWidth = +prompt("What's the new width?", "100");
-    while (isNaN(newWidth) || newWidth > 100 || newWidth < 1) {
+    let newWidth = prompt("What's the new width?", "100");
+    if (newWidth === null) return;
+    while (isNaN(+newWidth) || +newWidth > 100 || +newWidth < 1) {
         alert("Please ensure value is below 100 and is a valid number.");
-        newWidth = +prompt("What's the new height?", "100");
+        newWidth = prompt("What's the new height?", "100");
+        if (newWidth === null) return;
     };
 
     pixels.replaceChildren();

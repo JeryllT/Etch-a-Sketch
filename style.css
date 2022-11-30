@@ -1,17 +1,17 @@
 body {
-    background-color: lightskyblue;
+    background-color: #ebddc7;
 }
 
 div {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: cursive;
 }
 
 div.options {
     flex-direction: column;
-    border: 3px solid black;
-    border-right: 0px;
+    margin-right: 50px;
     height: auto;
     width: auto;
 }
@@ -45,3 +45,24 @@ form {
 .pixel:hover {
     background-color: black;
 }
+
+button {
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 170px;
+    min-height: 40px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+  }
