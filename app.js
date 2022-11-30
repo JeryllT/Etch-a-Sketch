@@ -1,8 +1,6 @@
 const pixels = document.querySelector(".pixel-container");
 console.log(pixels)
 
-// function containerDim(height, width)
-
 for(i=0; i < 16; i++) {
     let rowDiv = document.createElement("div");
     rowDiv.classList.add("row-div");
@@ -43,3 +41,14 @@ function containerDim() {
         pixels.appendChild(rowDiv);
     };
 };
+
+function randomRBG() {
+    const pixel = document.querySelectorAll(".pixel");
+    pixel.forEach(pix => {
+        let red = Math.floor(Math.random() * 256);
+        let blue = Math.floor(Math.random() * 256);
+        let green = Math.floor(Math.random() * 256);
+        pix.addEventListener("mouseover", pixListener => pixListener.target.style.backgroundColor = `rgb(${red}, ${blue}, ${green})`);
+    });
+};
+
